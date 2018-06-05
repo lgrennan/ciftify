@@ -7,7 +7,7 @@
   - [ Running an example subject ](tutorials/example-usage.md)
   - [ Working with wb_view ](tutorials/wb_view-example.md)
   - [ Freesurfer's recon-all on cluster ](tutorials/Freesurfer's-recon-all-on-cluster.md)
-  - [ Breaking up an dlabel network atlas ](tutorials/break_up_network_atlas.md)
+  - [ Breaking up a dlabel network atlas ](tutorials/break_up_network_atlas.md)
 - Usage
   - [ ciftify_groupmask ](usage/ciftify_groupmask.md)
   - [ ciftify_meants ](usage/ciftify_meants.md)
