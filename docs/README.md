@@ -8,7 +8,7 @@ The tools of the Human Connectome Project (HCP) adapted for working with non-HCP
 
 1. [**conversion tools**](#conversion-tools) : command line tools adapted from HCP Minimal processing pipeline to put preprocessed T1 and fMRI data into an HCP like folder structure
 2. [**ciftify tools**](#ciftifytools) : Command line tools for making working with cifty format a little easier
-3. [**cifti_vis tools**](#cifti_vistools) : Visualization tools, these use connectome-workbench tools to create pngs of standard views the present theme together in fRML pages.
+3. [**cifti_vis tools**](#cifti_vistools) : Visualization tools, these use connectome-workbench tools to create pngs of standard views that present theme together in fRML pages.
 
 ## Check out our wiki for more details on individual tools!
 https://edickie.github.io/ciftify/
@@ -36,9 +36,9 @@ Scripts adapted from HCP Minimal processing pipeline to put preprocessed T1 and 
 + **ciftify_recon_all**
   + Will convert any freeserfer output directory into an HCP (cifti space) output directory
 + **ciftify_subject_fmri**
-  + Will project a nifti functional scan to a cifti .dtseries.nii in that subjects hcp analysis directory
-  + The subject's hcp analysis directory is created by runnning ciftify_recon_all on that participants freesurfer output
-  + will do fancy outlier removal to optimize the mapping in the process and then smooth the data in cifti space
+  + Will project a nifti functional scan to a cifti .dtseries.nii in that subject's hcp analysis directory
+  + The subject's hcp analysis directory is created by runnning ciftify_recon_all on that participant's freesurfer output
+  + will do fancy outlier removal to optimize the mapping in the process, and then smooth the data in cifti space
 
 ## ciftify Tools
 
@@ -51,7 +51,7 @@ Scripts adapted from HCP Minimal processing pipeline to put preprocessed T1 and 
 + **ciftify_surface_rois**:
   + a tool for building circular rois on the cortical surface. Multiple roi locations can be read at once from a csv table.
 + **ciftify_groupmask**:
-  + a tools for building a group mask for statiscal analyses using multiple .dtseries.nii files as the input
+  + a tool for building a group mask for statiscal analyses using multiple .dtseries.nii files as the input
 + **cifity_vol_result**
   +  Will project a nifti scan to cifti space (4D nifti -> .dtseries.nii or 3D nifti -> .dsclar.nii) with no fancy steps or smoothing
   +  intended for conversion of 3D statistical maps (or 3D regions of interest) for visualization with wb_view
@@ -61,17 +61,17 @@ Scripts adapted from HCP Minimal processing pipeline to put preprocessed T1 and 
 + **citfi_vis_recon_all**:
   + builds visual qc pages for verification of ciftify_recon_all conversion
   + Note: these pages can also be used for qc of freesurfer's recon-all pipeline
-  + (they easier to generate (i.e. no display needed) than freesurfer QAtools, and a little prettier too)
+  + (they are easier to generate (i.e. no display needed) than freesurfer QAtools, and a little prettier too)
 + **cifti_vis_fmri**:
   + builds visual qc pages for verification of ciftify_subject_fmri volume to surface mapping
   + also show surface smoothed images of seed based connectivity to give an impression of preprocessed fmri data quality
 + **cifti_vis_map**:
   +  generates picture of standard views from any cifti map (combined into on .html page)
-  +  One can loop over multiple files (i.e. maps from multiple subjects) and combine all outputs so that all subjects can viewed together in one index page.
+  +  One can loop over multiple files (i.e. maps from multiple subjects) and combine all outputs so that all subjects can be viewed together in one index page.
   +  can also take a nifti input which is internally converted to cifti using *ciftify_vol_result*
 + **cifti_vis_RSN**:
-  +  From a functional file input, Will run seed-based correlations  from 4 ROIS of interest then generate pics of standard views
-  +  One can loop over multiple files (i.e. maps from multiple subjects) and combine all outputs so that all subjects can viewed together in one index page.
+  +  From a functional file input, will run seed-based correlations from 4 ROIS of interest, then generate pics of standard views
+  +  One can loop over multiple files (i.e. maps from multiple subjects) and combine all outputs so that all subjects can be viewed together in one index page.
   +  can also take a nifti input which is internally converted to cifti using *ciftify_vol_result*
 
 ## And also in the bin there is
@@ -83,7 +83,7 @@ epi_hcpexport
 
 ## References / Citing ciftify
 
-The workflows and template files employed in ciftify were adapted from those of the Human Connectome Project's minimal proprocessing pipeline.  As such, any work employing ciftify's conversion of visualization tools should cite:
+The workflows and template files employed in ciftify were adapted from those of the Human Connectome Project's minimal preprocessing pipeline.  As such, any work employing ciftify's conversion of visualization tools should cite:
 
 Glasser MF, Sotiropoulos SN, Wilson JA, Coalson TS, Fischl B, Andersson JL, Xu J, Jbabdi S, Webster M, Polimeni JR, Van Essen DC, Jenkinson M, WU-Minn HCP Consortium. The minimal preprocessing pipelines for the Human Connectome Project. Neuroimage. 2013 Oct 15;80:105-24. PubMed PMID: 23668970; PubMed Central PMCID: PMC3720813.
 
