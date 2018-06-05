@@ -11,11 +11,11 @@ Produces a comma separated values (.csv) file mean voxel/vertex timeseries from 
 
 ## [ ciftify_seed_corr ](usage/ciftify_seed_corr)
 
-Produces a seed correlation map of the mean timeseries within the seed with every voxel in the functional file. Uses `ciftify_meants` to calculate the mean time series and therefore can take a combination of NIFTI, CIFTI or GIFTI inputs. The output seed correlation map matches the file type (NIFTI or CIFTI) of the input functional file.
+Produces a seed correlation map of the mean timeseries within the seed, with every voxel in the functional file. Uses `ciftify_meants` to calculate the mean time series, and therefore can take a combination of NIFTI, CIFTI or GIFTI inputs. The output seed correlation map matches the file type (NIFTI or CIFTI) of the input functional file.
 
 ## [ ciftify_surface_rois ](usage/ciftify_surface_rois)
 
-Builds circular (geodesic) ROIs on a specified cortical surface according to information read from a table in a comma separated values (.csv) input file. Makes heavy use of wb_command -surface-geodesic-rois functionality.
+Builds circular(geodesic) ROIs on a specified cortical surface according to information read from a table in a comma separated values (.csv) input file. Makes heavy use of wb_command -surface-geodesic-rois functionality.
 
 ## [ ciftify_peaktable ](usage/ciftify_peaktable)
 
